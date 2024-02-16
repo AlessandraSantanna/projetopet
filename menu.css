@@ -1,0 +1,459 @@
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color:white;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+li{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;
+}
+
+a:hover{
+    color:orange;
+
+}
+
+
+header{
+    position:relative;
+    padding: 0 2rem;
+
+}
+
+.navbar{
+    width: 100%;
+    height:60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display:flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color:black;
+    font-size:1.5rem;
+    cursor:pointer;
+    display: none;
+
+}
+
+.action_btn{
+    background-color: orange;
+    color:black;
+    padding: 0.5rem 1rem;
+    border:none;
+    outline:none;
+    border-radius:20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor:pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover{
+    scale: 1.0s;
+    color:#fff;
+
+}
+
+
+/* dropdown menu*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top:60px;
+    height: 0;
+    width: 300px;
+    background: rgba(240, 99, 48, 0.788);
+    backdrop-filter: blur (15px);
+    border-radius:10px;
+    overflow:hidden;
+    transition:height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+
+.dropdown_menu.open{
+    height: 240px;
+} 
+
+.dropdown_menu li{
+padding: 0.7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+/*HERO*/
+.hero {
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color:black;
+
+}
+    .hero .titulo  h1{
+        padding: 80px 50px 0px 40px;
+        text-align: center;
+        font-size:25px;
+        font-family: "poppins";
+    }
+    
+    p{
+        color:orange;
+        text-align: center;
+        padding-top: 37px;
+        padding-bottom: 37px;
+        font-size:50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: "Protest Riot";
+    }
+
+  .logo_pet{
+        width:180px; 
+    }
+
+    .imagem{
+        padding: 30px 10px 20px 30px;
+    }
+    .logo{
+        width:280px; 
+    }
+
+
+    .cards {
+        background-color: #ecaf60fd;
+        height:200px;
+        width: 300px;
+        border-radius: 20px;
+        padding: 30px 10px 20px 30px;
+        display: inline-block;
+        gap:18px;
+    }
+
+    .cards img{
+        width: 90px;
+        padding-bottom: 30px;
+       
+    }
+
+    .projetos{
+        text-align: center;
+        padding-top: 37px;
+        padding-bottom: 37px;
+        padding: 30px 10px 10px 40px;
+    }
+    
+
+
+    .cards2 {
+        background-color: transparent;
+        height:400px;
+        width: 300px;
+        border:1px;
+        border-style: groove;
+        padding: 30px 10px 20px 30px;
+        display: inline-block;
+        gap:18px;
+    }
+
+    .cards2 img{
+        width: 120px;
+       
+    }
+
+
+    .projetos2{
+        text-align: center;
+        padding-top: 37px;
+        padding-bottom: 37px;
+    }
+
+    h5{
+        font-size:18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: "Protest Riot"
+    }
+
+    h6{
+        font-size:10px;
+        font-style: normal;
+        color:rgb(43, 42, 42);
+        line-height: normal;
+        font-family: "Poppins"; 
+    }
+     .comprar{
+        border-radius:30px;
+        border:none;
+        background: orange;
+        width:100px;  
+     }
+
+    .projetos3{
+        text-align: center;
+        padding-top: 37px;
+        padding-bottom: 37px;
+
+    }
+
+    .cards3{
+            background-color: transparent;
+            height:580px;
+            width: 500px;
+            border:1px;
+            border-style: groove;
+            padding: 20px 10px 20px 30px;
+            display: inline-block;
+            gap:18px;
+    } 
+    
+    .cards3 img{
+        width: 300px;
+
+    }
+    .projetos4{
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display:inline-flex;
+        gap:18px;
+    
+    }
+
+    .cards4 img{
+        width: 400px;
+        padding: 10px 0px 0px 0px;
+    }
+
+    footer {
+        border-width: 1px;
+    border-top-style: solid;
+    border-top-color:rgb(255, 102, 0);
+    
+
+}
+
+
+footer .rodape {
+   
+    justify-content:center;
+    padding:24px;
+}
+
+footer .links p {
+    text-align: center;
+        font-size:18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: "poppins";
+        color:rgb(255, 102, 0)
+}
+
+/*responsive design*/
+
+@media(max-width:992px){
+    .navbar .links,.navbar .action_btn {
+    display: none;
+    }
+
+
+    .navbar .toggle_btn{
+        display: block;
+
+    }
+
+
+    .dropdown_menu{
+        display: block;
+    
+    }
+    .imagem {
+        width:100px;
+    }
+
+
+    .hero {
+        padding: 60px 20px 20px 20px;
+        display: inline-block;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        color:black;
+    }
+
+    h1{
+        text-align: center;
+        font-size:18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    h2{
+        display: none;
+    }
+
+    p{
+        font-size:25px;
+
+    }
+    .cards {
+        background-color: #ecaf60fd;
+        height:100px;
+        width: 80px;
+        border-radius: 20px;
+        padding: 10px 0px 0px 0px;
+        display: inline-block;
+        gap:12px;
+    }
+   
+    .cards img{
+        width: 40px;
+        padding: 10px 0px 0px 0px;
+
+    }
+    
+
+    .cards h5{
+        font-size:10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: "Protest Riot";
+    }
+
+    
+    .projetos{
+        text-align: center;
+        padding-top: 37px;
+        padding-bottom: 37px;
+        display: flex;
+        gap:1px;
+        padding: 10px 0px 0px 18px;
+
+    }
+
+    .cards2 {
+        height:280px;
+        width: 80px;
+        border-radius: 20px;
+        padding: 10px 0px 0px 0px;
+        display: inline-block ;
+        gap:12px;
+    }
+        
+    .cards2 img {
+        width: 70px;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .cards2 h5{
+        font-size:10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: "Protest Riot";
+    }
+    .comprar{
+        border-radius:30px;
+        border:none;
+        background: orange;
+        width:70px; 
+        display:inline-block ;
+     }
+
+    .cards3 {
+         height:220px;
+         width: 150px;
+         border-radius: 20px;
+         padding: 10px 0px 0px 0px;
+         display: inline-block;
+         gap:12px;
+     }
+
+    .cards3 img{
+        width: 100px;
+        padding: 10px 0px 0px 0px;
+    }
+
+ .projetos3 {
+    text-align: center;
+    padding: 5px 0px 0px 0px;
+    display: inline;
+    gap:1px;         
+    }
+
+
+    .projetos4{
+        text-align: center;
+        display: inline-flex;
+        gap:18px;
+       
+    }
+    
+
+    .cards4 img{
+        width:150px;
+       
+    }
+
+ @media(max-width:576) {
+    .dropdown_menu {
+    left: 2rem;
+    width: unset;
+ }             
+
+}  
+   
+}
