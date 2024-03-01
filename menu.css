@@ -163,11 +163,24 @@ justify-content: center;
 
     .imagem{
         padding: 30px 10px 20px 30px;
+        position: relative;
+        animation:flutuar 2s ease-in-out infinite alternate;
     }
+
+
     .logo{
         width:280px; 
     }
 
+
+@keyframes flutuar{
+    0% {
+        top:0;
+    }
+    100% {
+        top:30px;
+    }
+}
 
     .cards {
         background-color: #ecaf60fd;
@@ -291,8 +304,7 @@ section.especialidades{
 .serviços {
   
    padding:10px 20px 40px 40px;
-   border:0.5px solid #1d1c1c;
-   border-style: groove;
+   border:none;
    margin-top: 100px;
    border-radius: 25px;
    width: 300px;
@@ -350,7 +362,8 @@ section.fornecedores{
 footer {
  border-width: 1px;
 border-top-style: solid;
-border-top-color:rgb(255, 102, 0);
+border:none;
+
 } 
 
 
@@ -388,6 +401,22 @@ footer .cadastrar{
         width:100px; 
         color:#000;
     } 
+
+
+ /*contato*/
+
+    .contato .falar h1{
+
+        text-align: center;
+        font-size:18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: "poppins";
+        color:rgb(255, 166, 0);
+
+
+    }
 
    
 
@@ -558,8 +587,22 @@ section.fornecedores{
             display: inline-flexbox;
      
     }
-    
 
+
+
+
+
+    footer {
+        position: relative;
+        
+    }
+
+    footer .rodape .cadastro {
+        text-align: center;
+        display:grid;
+
+    }
+    }
 
 
  @media(max-width:576) {
@@ -570,4 +613,3 @@ section.fornecedores{
 
 }  
    
-}
