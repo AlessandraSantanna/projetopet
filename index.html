@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="./menu.css">
 
     
@@ -18,21 +19,20 @@
 <body>
     <header>
             <div class="navbar">
-                <div class="logopet"  img src="img/logopet.jpeg"> </div> 
                  <ul class="links">    
-                        <li><a href="#contatos" button class="contatos">contato</a></li>
-                        <li><a href="#serviços" button class="serviços">Serviços</a></li>
-                        <li><a href="#produtos" button class="produtos">Produtos</a></li>
+                    <li><a href="#contatos" button class="contatos">Contato</a></li>
+                    <li><a href="#serviço" button class="trabalho">Serviço</a></li>
+                   <li><a href="#produtos" button class="produtos">Produtos</a></li>
                         
-                 </ul>
+                </ul>
                  <a href="#dicas" button class="action_btn">Dicas para o seu Pet</a>
                 <div class="toggle_btn"> 
                     <i class='fa-solid fa-bars'></i>
                 </div>
             </div>
         <div class="dropdown_menu">
-            <li><a href="#contatos" button class="contatos">contato</a></li>
-             <li><a href="#serviços" button class="serviços">Serviços</a></li>
+            <li><a href="#contatos" button class="contatos">Contato</a></li>
+             <li><a href="#trabalho" button class="trabalho">Trabalhos</a></li>
             <li><a href="#produtos" button class="produtos">Produtos</a></li>
             <li><a href="#dicas" button class="action_btn"> Dicas para o seu Pet</a></li>
 
@@ -156,49 +156,90 @@
              
         </div>
 
-           
-        <div class="projetos3"> <a name="serviços"></a>
+       
+       </div>
+
+        <div class="projetos3"> <a name="serviço"></a>
             <p> Nossos Serviços</p> 
             <div class="cards3">
-                <img src="./img/tosa.jpeg">
+                <img src="./img/petfoto3.jpeg" >
               
             </div>
-    
-              <div class="cards3">
-                  <img src="./img/entrega.jpeg" >
-                  
-               </div>
-
+            <div class="cards3">
+                <img src="./img/petfoto4.jpg" >
+              
+            </div>
         </div>
-                
-        <p> Dicas para o seu Pet  </p>
-            <div class="projetos4"><a name="dicas"></a>
-               
-                     <div class="cards4">
-                        <img src="./img/dicas2.jpg">  
-                    </div>
-           
-          
-                    <div class="cards4">
-                         <img src="./img/dica.jpeg">  
-                    </div>
-
-                    <br> <br> <br>
-                   
-               </div>
-            </div>
-                
-
-        <footer>
-            <div class="rodape"><a name="contatos"></a>
-                <div class="links">
-                    <p>Entre em contato <br>
-                    Telefone: (21) 99737-9009<br>
-                    <img src="./img/zap.png"> whatsApp: (21) 99737-9009<br>
-                    sac.ecommerce@pet.com.br  </p >        
-                </div>
     
-            </div>
+            
+                
+        <section class="especialidades">
+                <div class="serviços">
+                    <div class="calendario">
+                         <p class="cald"><i class="bi bi-calendar2-date-fill"></i>  </p>
+                    </div>
+                     <div class="serviço-data">
+                        <h3>Faça a agenda do seu Pet </h3>  
+                     </div>
+                </div>  
+         
+                <div class="serviços">
+                    <div class="calendario">
+                        <p class="cald"><i class="bi bi-bicycle"></i>  </p>
+                    </div>
+                     <div class="serviço-data">
+                        <h3>Suas entregas sempre grátis</h3>  
+                     </div>
+                </div>  
+                <div class="serviços">
+                    <div class="calendario">
+                        <p class="cald"><i class="bi bi-droplet"></i>  </p>
+                    </div>
+                     <div class="serviço-data">
+                        <h3>Qualidade do banho do seu Pet Garantido </h3>  
+                     </div>
+                </div>  
+          
+           
+        </section>
+                   
+
+                              
+            <section class="fornecedores">
+                <div class="fornecedores-img">
+                    <h1> Principais Fornecedores </h1> 
+                
+                    <div class="imagem_forn">   
+                        <img src="./img/Logo - Biofresh.png"  >
+                    
+                    </div>
+                    <div class="imagem_forn">   
+                        <img src="./img/Logo - Bravecto.png" > 
+                    </div>
+                    <div class="imagem_forn">    
+                        <img src="./img/Nexgard Spectra.png"> 
+                    </div>
+                    <div class="imagem_forn">   
+                        <img src="./img/PREMIER.png"> 
+                    </div>
+                </div>
+               
+            </section>
+       
+            <footer>
+            <div class="rodape"><a name="contatos"></a>
+               <p>Receba novidades e descontos exclusivos:</p>
+                <div class="cadastro">
+                     <label>Nome:</label>
+                    <input placeholder="name" type="nome" />
+                    <label>E-mail:</label>
+                    <input placeholder="e-mail" type="email" />
+                    <button class="cadastrar">
+                       Cadastrar 
+                    </button>
+                    <br><br><br>
+                <div> 
+            </div> 
     
         </footer>
     

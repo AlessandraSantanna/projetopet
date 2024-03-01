@@ -30,7 +30,8 @@ li{
 a{
     text-decoration: none;
     color:black;
-    font-size: 1rem;
+    font-size: 20px;
+    align-items:center;
 }
 
 a:hover{
@@ -41,7 +42,6 @@ a:hover{
 
 header{
     position:relative;
-    padding: 0 2rem;
 
 }
 
@@ -57,7 +57,7 @@ header{
 
 
 .navbar .logo a {
-    font-size: 1.5rem;
+    font-size:23px;
     font-weight: bold;
 }
 
@@ -196,7 +196,7 @@ justify-content: center;
 
     .cards2 {
         background-color: transparent;
-        height:400px;
+        height:350px;
         width: 300px;
         border:1px;
         border-style: groove;
@@ -240,25 +240,16 @@ justify-content: center;
      }
 
     .projetos3{
-        text-align: center;
-        padding-top: 37px;
-        padding-bottom: 37px;
-
+       
+        align-items: center;
+       padding-left: 80px;
+        display:flex;
+        gap:30px;
     }
 
-    .cards3{
-            background-color: transparent;
-            height:580px;
-            width: 500px;
-            border:1px;
-            border-style: groove;
-            padding: 20px 10px 20px 30px;
-            display: inline-block;
-            gap:18px;
-    } 
     
     .cards3 img{
-        width: 300px;
+        width: 600px;
 
     }
     .projetos4{
@@ -275,30 +266,130 @@ justify-content: center;
         padding: 10px 0px 0px 0px;
     }
 
-    footer {
-        border-width: 1px;
-    border-top-style: solid;
-    border-top-color:rgb(255, 102, 0);
+    
+
+       
+      
+
+
+
+
+/*classe das especialidades*/
+
+
+section.especialidades{
+    padding:40px 10%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    gap:30px;
+    
     
 
 }
 
-
-footer .rodape {
-   
-    justify-content:center;
-    padding:24px;
-}
-
-footer .links p {
+.serviços {
+  
+   padding:10px 20px 40px 40px;
+   border:0.5px solid #1d1c1c;
+   border-style: groove;
+   margin-top: 100px;
+   border-radius: 25px;
+   width: 300px;
+    display: inline-block;
     text-align: center;
-        font-size:18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        font-family: "poppins";
-        color:rgb(255, 102, 0)
+    background-color: orange;
+   color:#fff;
+  
+   
+   
+
 }
+.especialidades .serviços:hover{
+  transform: scale(1.05);  
+  box-shadow: 0 0 20px #131212fb ;
+}
+
+
+
+.especialidades .serviços .cald{
+    font-size:150px;
+    color: #fff;
+   
+}
+
+.especialidades .serviço-data h3{
+    font-size: 28px;
+    margin: 15px 0;
+
+
+}
+
+
+/*seção fornecedores*/
+section.fornecedores{
+    padding: 80px 1%;
+    position: relative;
+}
+
+ .fornecedores-img  {
+         text-align:center;  
+        padding: 10px;
+ }
+
+ 
+ .fornecedores .imagem_forn {
+        align-items:center;
+            padding: 30px;
+            display: inline;
+     
+    }
+
+ 
+/*ESTILO DO FORMULÁRIO CONTATO*/
+footer {
+ border-width: 1px;
+border-top-style: solid;
+border-top-color:rgb(255, 102, 0);
+} 
+
+
+footer .rodape p {
+       justify-content:center;
+    padding:24px;
+    background-color: orange;
+    text-align: center;
+    font-size:18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "poppins";
+    color:white;
+}
+
+footer .cadastro  {
+    justify-content:center;
+    padding:0px;
+    background-color: orange;
+    text-align: center;
+    font-size:18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "poppins";
+    color:white;
+    
+}
+
+footer .cadastrar{
+        border-radius:30px;
+        border:none;
+        background-color: #fff;
+        width:100px; 
+        color:#000;
+    } 
+
+   
 
 /*responsive design*/
 
@@ -413,25 +504,21 @@ footer .links p {
         display:inline-block ;
      }
 
-    .cards3 {
-         height:220px;
-         width: 150px;
-         border-radius: 20px;
-         padding: 10px 0px 0px 0px;
-         display: inline-block;
-         gap:12px;
-     }
+   
 
     .cards3 img{
-        width: 100px;
-        padding: 10px 0px 0px 0px;
+        width: 300px;
+     
     }
 
  .projetos3 {
     text-align: center;
-    padding: 5px 0px 0px 0px;
+   
     display: inline;
-    gap:1px;         
+    gap:1px;  
+    display: block;
+    padding: 10px 10px;
+
     }
 
 
@@ -444,9 +531,36 @@ footer .links p {
     
 
     .cards4 img{
-        width:150px;
+        width:850px;
        
     }
+
+    section.especialidades  {
+        display: none;
+            
+       
+    }
+    /*seção fornecedores*/
+section.fornecedores{
+    padding: 10px 1%;
+    position: relative;
+}
+
+ .fornecedores-img  {
+         text-align:center;  
+        padding: 10px 10px;
+ }
+
+ 
+ .fornecedores .imagem_forn {
+       
+            padding: 5px 1px;
+            display: inline-flexbox;
+     
+    }
+    
+
+
 
  @media(max-width:576) {
     .dropdown_menu {
